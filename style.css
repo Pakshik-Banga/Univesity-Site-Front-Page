@@ -1,0 +1,536 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+.header{
+   background-image: url(images/banner.png);
+   background-color: rgba(0,0,0,0.3);
+   background-blend-mode: multiply;
+   background-size: cover;
+}
+
+.nav{
+    padding: 16px 55px;
+    justify-content: space-between
+}
+.logo{
+    flex-grow: 1;
+}
+.nav-links{
+    /* flex-grow: 1; */
+    justify-content: end;
+}
+.list-items{
+    margin-left: 20px;
+}
+.list-items-link{
+   
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list-items-link::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.list-items-link:hover::after{
+    width: 100%;
+    
+
+}
+
+
+
+.nav-ul{
+    
+   
+    list-style: none;
+   
+   
+}
+
+    
+.logo-pic{
+    width: 106px;
+    height: 47px;
+   
+}
+
+
+.header-div{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 135px;
+    padding-bottom: 102px;
+    margin: auto;
+}
+
+.heading{
+    font-size: 3.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-div p{
+
+   margin: 20px 26%;
+}
+
+@media(max-width: 730px){
+    .header-div p{
+
+        margin: 20px 10%;
+     }
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 11px 19px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid white;
+
+      color: white;
+}
+
+.btn:hover{
+    background-color: #f44336;
+}
+
+@media(max-width: 800px){
+
+
+    .heading{
+        font-size: 2.4rem;
+       
+    }
+
+
+    .nav{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-div{
+      padding-top: 100px;
+    }
+    /* .nav-links{
+        flex-direction: column;
+        position: absolute;
+        background-color: #f44336;
+        width: 200px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        justify-content: left;
+        
+    }
+       .nav-ul{
+        flex-direction: column;
+       
+        align-items: left;
+       }
+    .list-items{
+        padding-left: 0;
+       
+    } */
+}
+
+/* courses */
+.courses{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.courses-upper-div{
+    text-align: center;
+
+    padding-top:100px;
+}
+
+.courses-upper-div-h1{
+    font-size: 2rem;
+}
+
+.courses-upper-div-p{
+    color: grey;
+    padding: 20px;
+}
+
+.courses-row{
+    justify-content: space-around;
+    padding-top: 40px;
+    flex-wrap: wrap;
+   
+}
+.courses-item{
+    text-align: center;
+    background-color: rgb(251, 231, 239);
+    width: 350px;
+    border-radius: 23px;
+  margin: 20px;
+}
+
+.courses-item:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+.courses-item h3{
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+
+.courses-item p{
+    color: grey;
+    padding: 10px;
+}
+
+/* campus */
+
+ .campus{
+    margin: 100px 30px 0 30px;
+    
+ }
+.campus-upper-div{
+    text-align: center;
+    
+}
+
+.campus-row{
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.campus-col{
+    margin: 20px;
+   position: relative;
+}
+
+.campus-img{
+    width: 360px;
+    height: 597px;
+}
+
+@media (max-width: 1200px){
+
+    .campus-img{
+        width: 500px;
+        height: 500px;
+    }
+    
+}
+
+.layer{
+
+       
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+
+.layer:hover{
+    background-color: rgba(226,0,0,.7);
+    
+}
+
+.layer p{
+    position: absolute;
+    top: 95%;
+     /* left: 35%; */
+     /* color: white; */
+     opacity: 0;
+
+}
+
+.layer:hover p{
+    opacity: 1;
+    color: white;
+    top: 48%;
+    transition: 0.3s;
+    font-size: 1.4rem;
+
+}
+
+  /* facilites */
+
+  .facilities{
+   
+    margin-top: 40px;
+  }
+
+  .facilities-upper-div{
+    text-align: center;
+  }
+  .facilities-upper-div-h1{
+    font-size: 2.4rem;
+   
+  }
+
+  .facilities-row{
+    margin-top: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .facilities-item{
+    width: 300px;
+    height: 400px;
+    margin: 20px 40px 10px 40px;
+    
+  }
+
+
+
+  .facilities-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .facilities-item h4{
+    margin-top: 15px ;
+    margin-bottom: 15px;
+  }
+
+  .facilities-item p{
+    color: grey;
+  }
+
+
+  /* testimonials  */
+
+  .testimonials{
+    margin-top:  100px;
+  }
+  .test-upper-div{
+
+    text-align: center;
+  }
+
+
+  .test-row{
+    margin-top: 80px;
+    justify-content: space-around;
+    margin-left: 60px;
+    margin-right: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .test-item{
+    width: 500px;
+    height: auto;
+    background-color: rgb(251, 231, 239);
+    padding: 20px 16px 35px 19px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .test-img-div{
+    margin-right: 30px;
+  }
+  .test-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .test-text p{
+    color: grey;
+    margin-bottom: 15px;
+  }
+
+   /* call section */
+
+   .call{
+    margin-top: 115px;
+    height: auto; 
+        margin-bottom: 50px;
+   }
+
+   .call-div{
+    
+    height: 350px;
+    /* width: 85%; */
+   
+    margin: 40px 10% 30px 10%;
+    
+   
+   }
+  
+
+   .call-div p{
+    font-size: 2.2rem;
+    color: white;
+    margin: 10% 20% 0;
+   }
+
+   .call-div div{
+    background-image: url(images/banner2.jpg);
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: multiply;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .call-div div button{
+    margin-bottom: 30px;
+   }
+
+   @media (max-width: 870px){
+    .call-div p{
+      font-size: 1.5rem;
+    }
+
+    /* .call div{
+      width: 95%;
+    } */
+
+
+   }
+   /* footer */
+
+   .footer{
+    margin : 20px 10%;
+    text-align: center;
+   }
+
+     .footer p{
+      margin: 10px 20%;
+      color: grey;
+      font-size: 0.8rem;
+     }
+
+
+     .social-logo{
+      width: 20px;
+      height: 20px;
+     }
+   /* about */
+
+   .about-header{
+      background-image: url(images/background.jpg);
+      background-color: rgba(0,0,0,0.4);
+      background-size: cover;
+      background-blend-mode: multiply;
+      /* background-color: red; */
+   }
+
+   .about-header-div{
+    font-family: 'Poppins', sans-serif;
+     font-size: 2.3rem;
+   }
+
+   /* middle container */
+
+   .middle-container{
+    
+    margin-top: 154px;
+    justify-content: center;
+    /* position: relative; */
+    
+    
+   }
+   
+   .middle-container-text{
+      /* width: 550px; */
+      margin: 30px 10%;
+   }
+   
+   .middle-container-text-heading{
+    font-size: 1.9rem;
+    font-weight:600;
+   }
+
+   .middle-container-text-text{
+    color: grey;
+    margin-top: 15px;
+    font-size: 0.9rem;
+   }
+   .middle-container-text img{
+    width: 414px;
+    height: 338px;
+    
+    float: right;
+    /* position: absolute; */
+    margin: 15px 0 15px 30px;
+   
+   }
+
+   .footer-about{
+    margin-top: 143px;
+   }
+
+   .explore{
+     border: 1px solid #f44336;
+     color: #f44336;
+     background-color: white;
+     margin-top: 27px;
+     padding: 10px 10px;
+   }
+
+   .explore:hover{
+            color: white;
+            background-color: #f44336;
+   }
+
+
+   /* courses */
+    /* middle */
+  
+    .middle{
+      margin: 149px 85px
+    }
+
+   .text img{
+    width: 614px;
+    height: 429px
+    /* margin:  */
+   }
+
+   .table{
+    width: 320px;
+   }
+   .table span{
+    display: inline-block;
+    color: grey;
+    /* width: 200px; */
+   }
+
+   
+   #head{
+    color: white;
+    background-color: #f44336;
+    width: 320px;
+    text-align: center;
+   }
+   /* .head span{
+
+   } */
+
+   .items{
+    margin: 10px 10px;
+    width: 320px;
+   }
+
+   .branch{
+    width: 90%;
+   }
